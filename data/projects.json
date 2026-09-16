@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "projects": [
+    {
+      "title": "Drug–Adverse Event Reasoner",
+      "category": "research",
+      "description": "A multi-source biomedical reasoning system combining RxNorm normalization, CADEC, the Ontology of Adverse Events, SapBERT, FAISS and interpretable graph-path evidence.",
+      "tags": ["Knowledge Graphs", "Biomedical NLP", "SapBERT", "FAISS"],
+      "github": "https://github.com/showman-sharma/drug_ae_reasoner"
+    },
+    {
+      "title": "Code Generation Research",
+      "category": "research",
+      "description": "HumanEval experimentation across structured reasoning, self-consistency, planning, self-refinement, recursive criticism and test-based enhancement.",
+      "tags": ["LLM Evaluation", "HumanEval", "Inference-time", "Reasoning"],
+      "github": "https://github.com/showman-sharma/codegen-ui-research"
+    },
+    {
+      "title": "Agentic RAG",
+      "category": "systems",
+      "description": "A modular retrieval system with document loading, chunking, embeddings, FAISS retrieval, provider abstraction and a LangGraph-based agentic workflow.",
+      "tags": ["RAG", "LangGraph", "FAISS", "LLM Systems"],
+      "github": "https://github.com/showman-sharma/agentic_rag"
+    },
+    {
+      "title": "Bio-inspired Similarity Search & Clustering",
+      "category": "ml",
+      "description": "Experiments extending bio-inspired learning into similarity search and mean-shifted clustering, including an application to fake-news classification.",
+      "tags": ["Unsupervised Learning", "BioHash", "Clustering", "NLP"],
+      "github": "https://github.com/showman-sharma/Bio-inspired-clustering"
+    },
+    {
+      "title": "Gradient Ascent Syndicate",
+      "category": "community",
+      "description": "An open-source effort to build a comprehensive, implementation-first AI/ML curriculum spanning mathematical foundations, classical ML, deep learning, LLMs and agents.",
+      "tags": ["Open Source", "Education", "AI/ML", "Community"],
+      "github": "https://github.com/gradient-ascent-syndicate/machine-learning-curriculum"
+    },
+    {
+      "title": "AI/ML Newsletter Automation",
+      "category": "systems",
+      "description": "An end-to-end agentic content workflow that collects AI news and research, synthesizes with LLMs, formats output and automates publishing through GitHub Actions.",
+      "tags": ["Automation", "LLMs", "GitHub Actions", "Publishing"],
+      "github": "https://github.com/showman-sharma/ai_blog_workflow"
+    },
+    {
+      "title": "Whitepapers on Enterprise AI",
+      "category": "research",
+      "description": "Long-form, reference-backed analysis on agents, banking AI, revenue management, responsible AI and the architecture of enterprise intelligence systems.",
+      "tags": ["Enterprise AI", "Agents", "Writing", "Architecture"],
+      "github": "https://github.com/showman-sharma/whitepapers"
+    },
+    {
+      "title": "GPT from Scratch — Learning Artifact",
+      "category": "ml",
+      "description": "A transparent educational implementation journey from neural-network primitives through attention, transformers, tokenization, KV cache and a working GPT.",
+      "tags": ["Transformers", "PyTorch", "Attention", "Education"],
+      "github": "https://github.com/showman-sharma/neetcode-gpt"
+    }
+  ]
+}
