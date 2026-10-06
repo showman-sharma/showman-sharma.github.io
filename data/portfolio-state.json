@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "last_updated": "2026-09-05",
+  "last_updated": "2026-10-06",
   "current": {
-    "focus": "Reliable agentic AI systems",
-    "question": "How do we evaluate and diagnose tool-using agents under real failure modes?",
-    "milestone": "First research paper published on IEEE Xplore — IEEE ICDH 2026"
+    "focus": "Building and sharpening AI products — JamFlow + CodeGen UI",
+    "question": "How do I make AI systems useful, reliable and delightful without overcomplicating the product?",
+    "milestone": "JamFlow reached a working installable mobile/PWA experience with live event controls"
   }
 }
