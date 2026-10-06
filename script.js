@@ -31,6 +31,25 @@ function projectCard(project, index) {
   card.className = "project-card";
   card.dataset.category = category;
 
+  const primaryUrl = live || github;
+  if (primaryUrl) {
+    card.classList.add("project-card-clickable");
+    card.tabIndex = 0;
+    card.setAttribute("role", "link");
+    card.setAttribute("aria-label", `Open ${title}`);
+    const openPrimary = event => {
+      if (event.target.closest("a, button")) return;
+      window.open(primaryUrl, "_blank", "noopener,noreferrer");
+    };
+    card.addEventListener("click", openPrimary);
+    card.addEventListener("keydown", event => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      if (event.target.closest("a, button")) return;
+      event.preventDefault();
+      window.open(primaryUrl, "_blank", "noopener,noreferrer");
+    });
+  }
+
   const idx = document.createElement("span");
   idx.className = "project-index";
   idx.textContent = `${String(index + 1).padStart(2, "0")} / ${category.toUpperCase()}`;
