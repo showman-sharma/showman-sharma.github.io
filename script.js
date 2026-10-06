@@ -22,9 +22,10 @@ function safePublicUrl(value) {
 function projectCard(project, index) {
   const title = safeText(project.title, 120);
   const category = safeText(project.category, 24);
-  const description = safeText(project.description, 320);
+  const description = safeText(project.description, 420);
   const github = safePublicUrl(project.github);
-  if (!title || !category || !description || !github) return null;
+  const live = safePublicUrl(project.live);
+  if (!title || !category || !description || (!github && !live)) return null;
 
   const card = document.createElement("article");
   card.className = "project-card";
@@ -36,12 +37,24 @@ function projectCard(project, index) {
 
   const links = document.createElement("div");
   links.className = "project-links";
-  const link = document.createElement("a");
-  link.href = github;
-  link.target = "_blank";
-  link.rel = "noreferrer";
-  link.textContent = "GitHub ↗";
-  links.appendChild(link);
+
+  if (live) {
+    const liveLink = document.createElement("a");
+    liveLink.href = live;
+    liveLink.target = "_blank";
+    liveLink.rel = "noreferrer";
+    liveLink.textContent = "Live ↗";
+    links.appendChild(liveLink);
+  }
+
+  if (github) {
+    const githubLink = document.createElement("a");
+    githubLink.href = github;
+    githubLink.target = "_blank";
+    githubLink.rel = "noreferrer";
+    githubLink.textContent = "GitHub ↗";
+    links.appendChild(githubLink);
+  }
 
   const heading = document.createElement("h3");
   heading.textContent = title;
@@ -64,7 +77,6 @@ function projectCard(project, index) {
   card.append(idx, links, heading, body, tags);
   return card;
 }
-
 function renderProjects(filter = "all") {
   if (!grid) return;
   const visible = filter === "all" ? projects : projects.filter(p => p.category === filter);
