@@ -327,3 +327,47 @@ if (year) year.textContent = new Date().getFullYear();
 loadProjects();
 loadPortfolioState();
 loadWriting();
+
+
+// Restored original portrait tilt and subtle cursor-follow ambience.
+(function initPortfolioMotion() {
+  const motionAllowed = window.matchMedia("(prefers-reduced-motion: no-preference)");
+  const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
+  const portrait = document.querySelector(".tilt-card");
+  const glow = document.getElementById("cursor-glow");
+  if (!portrait && !glow) return;
+  if (!motionAllowed.matches || !finePointer.matches) return;
+
+  let raf = 0;
+  let x = 0;
+  let y = 0;
+  function updateGlow() {
+    raf = 0;
+    if (!glow) return;
+    glow.style.left = x + "px";
+    glow.style.top = y + "px";
+  }
+  document.addEventListener("pointermove", event => {
+    if (event.pointerType && event.pointerType !== "mouse") return;
+    x = event.clientX;
+    y = event.clientY;
+    if (glow) {
+      glow.style.opacity = "1";
+      if (!raf) raf = requestAnimationFrame(updateGlow);
+    }
+  }, { passive: true });
+  document.addEventListener("pointerleave", () => {
+    if (glow) glow.style.opacity = "0";
+  });
+
+  if (!portrait) return;
+  portrait.addEventListener("pointermove", event => {
+    const rect = portrait.getBoundingClientRect();
+    const px = (event.clientX - rect.left) / rect.width - 0.5;
+    const py = (event.clientY - rect.top) / rect.height - 0.5;
+    portrait.style.transform = `perspective(1100px) rotateY(${px * 12}deg) rotateX(${-py * 10}deg) rotateZ(1deg) translateY(-5px)`;
+  }, { passive: true });
+  portrait.addEventListener("pointerleave", () => {
+    portrait.style.transform = "";
+  });
+})();
