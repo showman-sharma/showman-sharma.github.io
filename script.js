@@ -98,9 +98,11 @@ function projectCard(project, index) {
 }
 function renderProjects(filter = "all") {
   if (!grid) return;
-  const visible = filter === "all" ? projects : projects.filter(p => p.category === filter);
+  const selected = projects.filter(p => p.title !== "JamFlow"); // Featured separately above
+  const visible = filter === "all" ? selected : selected.filter(p => p.category === filter);
   const cards = visible.map(projectCard).filter(Boolean);
   if (cards.length) grid.replaceChildren(...cards);
+  else grid.textContent = "No projects in this category yet.";
 }
 
 async function loadProjects() {
@@ -110,7 +112,7 @@ async function loadProjects() {
     if (!response.ok) return;
     const data = await response.json();
     if (data.schema_version !== 1 || !Array.isArray(data.projects)) return;
-    projects = data.projects.filter(Boolean);
+    projects = data.projects.filter(Boolean).sort((a,b) => (a.title === "CodeGen UI") - (b.title === "CodeGen UI"));
     renderProjects();
   } catch (_) {
     grid.textContent = "Selected work is temporarily unavailable.";
