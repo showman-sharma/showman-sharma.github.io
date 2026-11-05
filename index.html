@@ -3,87 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Anirudh Sharma — a personal book of engineering, research, learning, writing, making, performance and the person connecting them." />
+  <meta name="description" content="Anirudh Sharma — AI/ML product engineer, researcher and independent maker in Hyderabad." />
   <meta name="theme-color" content="#efe8dc" />
-  <title>Anirudh Sharma — A Book in Progress</title>
+  <title>Anirudh Sharma — Engineer, Researcher & Maker</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  
   <link rel="stylesheet" href="lore.css" />
 </head>
 <body>
-  <header class="book-nav">
-    <a class="book-brand" href="#cover" aria-label="Back to cover">
-      <img src="https://github.com/showman-sharma.png" alt="Anirudh Sharma" width="36" height="36" />
-      <span>Anirudh Sharma</span>
-    </a>
-    <nav aria-label="Book navigation">
-      <a href="#contents">Contents</a>
-      <a href="#current">Now</a>
-      <a href="#contact">Contact</a>
-      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to night mode" title="Switch theme"><span aria-hidden="true">☾</span></button>
-    </nav>
-  </header>
+  <header class="book-nav"><a class="book-brand" href="#cover"><span class="brand-mark">AS.</span><span>Anirudh Sharma</span></a><nav aria-label="Main navigation"><a href="#engineering">Experience</a><a href="#projects">Projects</a><a href="#research">Research</a><a href="#about">About</a><a href="#contact">Contact</a><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch theme"><span aria-hidden="true">☾</span></button></nav></header>
 
   <main class="book-shell">
-    <section id="cover" class="book-page cover-page reveal" data-chapter="cover">
-      <div class="cover-spread">
-        <div class="cover-main">
-          <div class="folio-label">VOLUME I · ONGOING</div>
-          <h1>Anirudh<br>Sharma</h1>
-          <p class="cover-deck">Engineer, researcher, writer, maker — and several other things depending on the week.</p>
-          <div class="cover-note">A book about a person. The work is part of the story, not the title of it.</div>
-        </div>
-        <aside class="cover-colophon">
-          <span class="small-caps">THIS EDITION</span>
-          <p>Hyderabad · 2026</p>
-          <p>Engineering, research, learning, writing, making, stage, community.</p>
-          <a class="book-cta" href="#contents" data-chapter-link>Open the book →</a>
-        </aside>
-      </div>
-      <div class="page-folio"><span>ANIRUDH SHARMA</span><span>i</span></div>
-    </section>
+    <section id="cover" class="book-page cover-page" data-chapter="cover"><div class="cover-spread"><div class="cover-main"><span class="small-caps">AI/ML PRODUCT ENGINEER · RESEARCHER · MAKER</span><h1>Hi, I'm <span>Anirudh.</span></h1><p class="cover-deck">I build AI systems that work beyond the notebook — and occasionally make software for things that have nothing to do with AI.</p><p class="cover-note">I work on enterprise AI at Oracle, investigate language models and evaluation, and build independent tools that solve real problems. I like making difficult things useful, understandable, and occasionally delightful.</p><div class="hero-actions"><a class="book-cta" href="#projects">Explore projects ↗</a><a class="text-cta" href="#contact">Get in touch ↗</a></div><div class="hero-signals"><span>Enterprise AI</span><span>Research & evaluation</span><span>Independent products</span></div></div><div class="cover-colophon"><img src="https://github.com/showman-sharma.png" alt="Anirudh Sharma" width="460" height="460" loading="eager"><p>Engineer by profession. Curious by habit.</p></div></div></section>
 
-    <section id="contents" class="book-page contents-page reveal" data-chapter="contents">
-      <div class="chapter-opener compact-opener">
-        <span class="chapter-number">CONTENTS</span>
-        <h2>The chapters so far.</h2>
-        <p>Not a hierarchy. Not a final definition. Just the parts of life that have accumulated enough weight to deserve their own pages.</p>
-      </div>
-      <div class="toc-list">
-        <a href="#engineering" data-chapter-link><span class="toc-no">01</span><span><strong>Engineering</strong><small>Product systems · architecture · selected work</small></span><em>12</em></a>
-        <a href="#research" data-chapter-link><span class="toc-no">02</span><span><strong>Research</strong><small>Papers · experiments · questions</small></span><em>28</em></a>
-        <a href="#education" data-chapter-link><span class="toc-no">03</span><span><strong>Learning</strong><small>IITM · IIITB · LJMU · beyond</small></span><em>38</em></a>
-        <a href="#writing" data-chapter-link><span class="toc-no">04</span><span><strong>Writing</strong><small>Essays · notes · explanations</small></span><em>46</em></a>
-        <a href="#making" data-chapter-link><span class="toc-no">05</span><span><strong>Making</strong><small>Drawing · cinema · side projects</small></span><em>54</em></a>
-        <a href="#stage" data-chapter-link><span class="toc-no">06</span><span><strong>Stage &amp; People</strong><small>Speaking · performance · community</small></span><em>62</em></a>
-        <a href="#about" data-chapter-link><span class="toc-no">07</span><span><strong>Anirudh</strong><small>The person between all of it</small></span><em>70</em></a>
-      </div>
-      <div class="page-folio"><span>TABLE OF CONTENTS</span><span>1</span></div>
-    </section>
-
-    <section id="current" class="book-page now-page reveal" data-chapter="current">
-      <div class="chapter-opener compact-opener">
-        <span class="chapter-number">FRONT MATTER · NOW</span>
-        <h2>What has my attention right now.</h2>
-      </div>
-      <div class="now-grid">
-        <article><span>CURRENTLY GOING DEEP ON</span><p id="current-focus">Building and sharpening AI products — JamFlow + CodeGen UI</p></article>
-        <article><span>QUESTION I KEEP POKING</span><p id="current-question">How do I make AI systems useful, reliable and delightful without overcomplicating the product?</p></article>
-        <article><span>LATEST MILESTONE</span><p id="current-milestone">JamFlow reached a working installable mobile/PWA experience with live event controls</p></article>
-      </div>
-      <span id="state-updated" class="state-updated"></span>
-      <div class="page-turn-row"><a href="#contents" data-chapter-link>← Contents</a><a href="#engineering" data-chapter-link>Begin Chapter 01 →</a></div>
-      <div class="page-folio"><span>FRONT MATTER</span><span>7</span></div>
-    </section>
-
-    <section id="engineering" class="book-page book-chapter reveal" data-chapter="engineering">
+    <section id="engineering" class="book-page book-chapter" data-chapter="engineering">
       <div class="chapter-opener">
-        <span class="chapter-number">CHAPTER 01</span>
-        <h2>Engineering</h2>
+        <span class="chapter-number">SELECTED STORIES</span>
+        <h2>Engineering that works in the real world.</h2>
         <p>Build the thing. Then build the system around it.</p>
       </div>
 
@@ -96,16 +36,16 @@
       </div>
       <aside class="margin-note"><strong>Public-safe by design.</strong> These are deliberately sanitized case studies. No customer data, proprietary code, confidential architecture or internal screenshots are shown here.</aside>
 
-      <div class="subchapter-heading"><span>1.2</span><div><h3>Selected public work</h3><p>Recent products first, then the research and systems behind them. Things you can inspect rather than take on faith.</p></div></div>
-      <div class="filter-bar" id="filters"><button class="filter active" data-filter="all">Everything</button><button class="filter" data-filter="research">Research</button><button class="filter" data-filter="systems">AI systems</button><button class="filter" data-filter="ml">ML</button><button class="filter" data-filter="community">Open source</button></div>
+      <div class="subchapter-heading"><span>1.2</span><div><h3 id="projects">Projects & public work</h3><p>Independent products, research and systems you can explore for yourself.</p></div></div>
+      <article class="jamflow-feature"><div><span class="small-caps">FEATURED · USED AT A REAL EVENT</span><h3>JamFlow <span aria-hidden="true">♫</span></h3><p class="jamflow-lead">A participatory singing companion designed for real people and real events.</p><p>JamFlow helped make <strong>Manamantha 2.0</strong> a success. Built and refined around practical event needs — preparing songs and lyrics, organizing setlists and supporting a smoother shared singing experience. It's also my personal sandbox for independently learning AI-assisted development, CI/CD and product operations.</p><div class="jamflow-tags"><span>Event-tested</span><span>Web / PWA</span><span>Product engineering</span></div><a class="book-cta" href="https://jamflow-studio.vercel.app/" target="_blank" rel="noopener noreferrer">Explore JamFlow ↗</a></div><div class="jamflow-symbol" aria-hidden="true">J<span>♪</span></div></article><div class="more-projects-heading">More selected work</div><div class="filter-bar" id="filters"><button class="filter active" data-filter="all">Everything</button><button class="filter" data-filter="research">Research</button><button class="filter" data-filter="systems">AI systems</button><button class="filter" data-filter="ml">ML</button><button class="filter" data-filter="community">Open source</button></div>
       <div id="project-grid" class="project-grid"></div>
-      <div class="page-turn-row"><a href="#current" data-chapter-link>← Front matter</a><a href="#research" data-chapter-link>Chapter 02 · Research →</a></div>
-      <div class="page-folio"><span>CHAPTER 01 · ENGINEERING</span><span>12</span></div>
+      
+      
     </section>
 
-    <section id="research" class="book-page book-chapter reveal" data-chapter="research">
+    <section id="research" class="book-page book-chapter" data-chapter="research">
       <div class="chapter-opener">
-        <span class="chapter-number">CHAPTER 02</span>
+        <span class="chapter-number">SELECTED STORIES</span>
         <h2>Research</h2>
         <p>Does it actually work?</p>
       </div>
@@ -116,15 +56,15 @@
       <div class="subchapter-heading"><span>2.2</span><div><h3>Experiments &amp; current questions</h3><p>Capability amplification, reasoning, evaluation and methods that improve AI systems without treating model scale as the only answer.</p></div></div>
       <div class="research-grid two-up">
         <article class="research-card"><div class="research-meta"><span>Code Generation</span><span>Evaluation</span></div><h3>Inference-time strategies for code generation</h3><p>HumanEval experiments across self-consistency, structured reasoning, planning, refinement, recursive criticism and test-based enhancement.</p><a href="https://github.com/showman-sharma/codegen-ui-research" target="_blank" rel="noreferrer">See experiments ↗</a></article>
-        <article class="research-card"><div class="research-meta"><span>Current direction</span><span>Agents</span></div><h3>Reliable agentic AI systems</h3><p>Tool use, failure analysis, evaluation, retrieval, observability and the engineering required to make agents dependable in real products.</p></article>
+        <article class="research-card"><div class="research-meta"><span>Current direction</span><span>Agents</span></div><h3>AdaGraph · inference-time code generation</h3><p>An ongoing research investigation of adaptive inference-time methods for code generation, rigorous baselines and failure analysis. Results remain under evaluation.</p></article>
       </div>
-      <div class="page-turn-row"><a href="#engineering" data-chapter-link>← Chapter 01</a><a href="#education" data-chapter-link>Chapter 03 · Learning →</a></div>
-      <div class="page-folio"><span>CHAPTER 02 · RESEARCH</span><span>28</span></div>
+      
+      
     </section>
 
-    <section id="education" class="book-page book-chapter reveal" data-chapter="education">
+    <section id="education" class="book-page book-chapter" data-chapter="education">
       <div class="chapter-opener">
-        <span class="chapter-number">CHAPTER 03</span>
+        <span class="chapter-number">SELECTED STORIES</span>
         <h2>Learning</h2>
         <p>The roads that taught me how to think.</p>
       </div>
@@ -135,25 +75,25 @@
         <article class="education-card"><div class="crest">III</div><h3>Liverpool John Moores University</h3><div class="degree">MSc · Artificial Intelligence &amp; Machine Learning · Merit</div><p>Thesis: <em>Prompt Engineering for Efficient Code Generation with LLMs</em>.</p></article>
       </div>
       <div class="subchapter-heading"><span>3.2</span><div><h3>What learning looks like now</h3><p>Less collecting topics, more staying with difficult questions long enough to develop judgment: agents, evaluation, inference-time reasoning and reliable AI systems.</p></div></div>
-      <div class="page-turn-row"><a href="#research" data-chapter-link>← Chapter 02</a><a href="#writing" data-chapter-link>Chapter 04 · Writing →</a></div>
-      <div class="page-folio"><span>CHAPTER 03 · LEARNING</span><span>38</span></div>
+      
+      
     </section>
 
-    <section id="writing" class="book-page book-chapter reveal" data-chapter="writing">
+    <section id="writing" class="book-page book-chapter" data-chapter="writing">
       <div class="chapter-opener">
-        <span class="chapter-number">CHAPTER 04</span>
+        <span class="chapter-number">SELECTED STORIES</span>
         <h2>Writing</h2>
         <p>Ideas that escaped the notebook.</p>
       </div>
       <div class="subchapter-heading"><span>4.1</span><div><h3>Essays &amp; explanations</h3><p>Technical essays, research notes and longer arguments. The website is the index; the writing can live wherever it was originally published.</p></div></div>
       <div id="writing-grid" class="writing-grid"><article class="writing-card featured"><div class="writing-meta"><span>LinkedIn</span><span>Jul 4, 2026</span></div><h3>The Harness Is The Product</h3><p>Why the engineering around the model — retrieval, permissions, tooling, governance, observability and auditability — often determines whether enterprise AI actually works.</p><a class="writing-link" href="https://www.linkedin.com/pulse/harness-product-hidden-engineering-behind-enterprise-anirudh-sharma-y2lef" target="_blank" rel="noreferrer">Read on LinkedIn ↗</a></article></div>
-      <div class="page-turn-row"><a href="#education" data-chapter-link>← Chapter 03</a><a href="#making" data-chapter-link>Chapter 05 · Making →</a></div>
-      <div class="page-folio"><span>CHAPTER 04 · WRITING</span><span>46</span></div>
+      
+      
     </section>
 
-    <section id="making" class="book-page book-chapter reveal" data-chapter="making">
+    <section id="making" class="book-page book-chapter" data-chapter="making">
       <div class="chapter-opener">
-        <span class="chapter-number">CHAPTER 05</span>
+        <span class="chapter-number">SELECTED STORIES</span>
         <h2>Making</h2>
         <p>Not everything useful needs a KPI.</p>
       </div>
@@ -161,15 +101,15 @@
       <div class="side-quests">
         <article class="side-quest"><span>✎</span><h3>Drawing</h3><p>Sketches, visual thinking and the pleasure of making something with no deployment pipeline attached.</p></article>
         <article class="side-quest"><span>◉</span><h3>Cinema</h3><p>Indian cinema, visual storytelling, performance, memory, music and an unreasonable willingness to discuss all of it.</p></article>
-        <article class="side-quest"><span>◇</span><h3>Side projects</h3><p>JamFlow, CodeGen UI and the other experiments where software, research, design and a mildly unreasonable amount of iteration collide.</p></article>
+        <article class="side-quest"><span>◇</span><h3>Side projects</h3><p>JamFlow and other experiments where software, design and real human needs meet.</p></article>
       </div>
-      <div class="page-turn-row"><a href="#writing" data-chapter-link>← Chapter 04</a><a href="#stage" data-chapter-link>Chapter 06 · Stage &amp; People →</a></div>
-      <div class="page-folio"><span>CHAPTER 05 · MAKING</span><span>54</span></div>
+      
+      
     </section>
 
-    <section id="stage" class="book-page book-chapter reveal" data-chapter="stage">
+    <section id="stage" class="book-page book-chapter" data-chapter="stage">
       <div class="chapter-opener">
-        <span class="chapter-number">CHAPTER 06</span>
+        <span class="chapter-number">SELECTED STORIES</span>
         <h2>Stage &amp; People</h2>
         <p>Ideas change when another person is in the room.</p>
       </div>
@@ -178,13 +118,13 @@
         <article class="side-quest"><span>↗</span><h3>Community</h3><p>Gradient Ascent Syndicate, mentoring, teaching and building systems that let other people move faster too.</p></article>
         <article class="side-quest"><span>◎</span><h3>Explaining</h3><p>Teaching and communication are not side effects of technical work for me. They are part of how I test whether I understand it.</p></article>
       </div>
-      <div class="page-turn-row"><a href="#making" data-chapter-link>← Chapter 05</a><a href="#about" data-chapter-link>Chapter 07 · Anirudh →</a></div>
-      <div class="page-folio"><span>CHAPTER 06 · STAGE &amp; PEOPLE</span><span>62</span></div>
+      
+      
     </section>
 
-    <section id="about" class="book-page book-chapter reveal" data-chapter="about">
+    <section id="about" class="book-page book-chapter" data-chapter="about">
       <div class="chapter-opener">
-        <span class="chapter-number">CHAPTER 07</span>
+        <span class="chapter-number">SELECTED STORIES</span>
         <h2>Anirudh</h2>
         <p>The person between all the chapters.</p>
       </div>
@@ -196,23 +136,23 @@
         </div>
         <blockquote class="book-quote">“I do everything sincerely.<br>I take nothing seriously.”</blockquote>
       </div>
-      <div class="page-turn-row"><a href="#stage" data-chapter-link>← Chapter 06</a><a href="#contact" data-chapter-link>Afterword · Contact →</a></div>
-      <div class="page-folio"><span>CHAPTER 07 · ANIRUDH</span><span>70</span></div>
+      
+      
     </section>
 
-    <section id="contact" class="book-page contact-page reveal" data-chapter="contact">
+    <section id="contact" class="book-page contact-page" data-chapter="contact">
       <div class="chapter-opener compact-opener">
-        <span class="chapter-number">AFTERWORD</span>
+        <span class="chapter-number">SAY HELLO</span>
         <h2>Good problem?<br>Interesting person?</h2>
         <p>If you want to talk engineering, research, agents, writing, open source, startup ideas, cinema, or something unexpectedly adjacent — say hello.</p>
       </div>
       <div class="contact-links"><a href="mailto:vanirudhsharma@gmail.com">Email ↗</a><a href="https://www.linkedin.com/in/ml-engineer-v-s-s-anirudh-sharma/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/showman-sharma" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://x.com/showman_sharma" target="_blank" rel="noreferrer">X ↗</a><a href="https://www.instagram.com/showman_sharma/" target="_blank" rel="noreferrer">Instagram ↗</a></div>
-      <div class="page-turn-row"><a href="#about" data-chapter-link>← Chapter 07</a><a href="#cover" data-chapter-link>Close the book ↑</a></div>
-      <div class="page-folio"><span>AFTERWORD</span><span>76</span></div>
+      
+      
     </section>
   </main>
 
-  <footer class="book-footer"><span>© <span id="year"></span> Anirudh Sharma</span><span>A book in progress.</span></footer>
+  <footer class="book-footer"><span>© <span id="year"></span> Anirudh Sharma</span><span>Built with curiosity. Kept simple.</span></footer>
   <script src="script.js"></script>
 </body>
 </html>
